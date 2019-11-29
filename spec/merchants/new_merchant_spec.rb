@@ -15,7 +15,7 @@ RSpec.describe "As a user" do
       fill_in 'State', with: "CO"
       fill_in 'Zip', with: 80205
 
-      click_on "Submit"
+      click_on "Create"
       expect(current_path).to eq("/merchants")
 
       expect(page).to have_content("Phil DeLong")

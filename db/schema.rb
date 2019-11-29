@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 20191129223050) do
   enable_extension "plpgsql"
 
   create_table "merchants", force: :cascade do |t|
-    t.string "name"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.integer "zip"
+    t.string "name", default: "Name unknown"
+    t.string "address", default: "Address unknown"
+    t.string "city", default: "City unknown"
+    t.string "state", default: "State unknown"
+    t.integer "zip", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
