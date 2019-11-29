@@ -6,17 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-@phil = Merchant.new({
+phil = Merchant.create(
   name: "Phil DeLong",
   address: "3102 N. Race St.",
   city: "Denver",
   state: "CO",
   zip: 80205
-  })
-@courtney = Merchant.new({
+  )
+courtney = Merchant.create(
   name: "Courtney Newby",
   address: "1501 Wazee St., Apt. 3F",
   city: "Denver",
   state: "CO",
   zip: 80202
-  })
+)
